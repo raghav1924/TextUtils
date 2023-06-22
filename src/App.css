@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.blank{
+  color: #4d61e2;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+}
+.blank img{
+  width: 10rem;
+  animation: App-logo-spin infinite 20s linear;
+}
