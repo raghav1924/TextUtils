@@ -2,44 +2,44 @@ import React, { useState } from 'react'
 
 export default function About() {
 
-    
-    const [myStyle,setMyStyle]=useState({
+
+    const [myStyle, setMyStyle] = useState({
         color: '#000',
         backgroundColor: '#fff'
     });
 
-    const [btntxt,SetBtntxt]= useState('Dark Mode');
+    const [btntxt, SetBtntxt] = useState('Dark Mode');
 
-    const toggleMode=()=>{
-        if(myStyle.color=='#fff')
-        {setMyStyle({
-            color: '#000',
-            backgroundColor: '#fff'
-        })
-        SetBtntxt('Dark Mode')
-    }
+    const toggleMode = () => {
+        if (myStyle.color === '#fff') {
+            setMyStyle({
+                color: '#000',
+                backgroundColor: '#fff'
+            })
+            SetBtntxt('Dark Mode')
+        }
         else {
             setMyStyle({
-            color: '#fff',
-            backgroundColor: '#35332b'
-        })
-        SetBtntxt('Light Mode')
+                color: '#fff',
+                backgroundColor: '#35332b'
+            })
+            SetBtntxt('Light Mode')
 
-    }
+        }
     }
 
-    
+
     return (
         <div className='container'>
             <div>
-            <h1>About Us
+                <h1>About Us
 
-            <button onClick={toggleMode} className="btn btn-warning ms-5 mb-2 btn-sm" >{btntxt}</button>
-            </h1>
+                    <button onClick={toggleMode} className="btn btn-warning ms-5 mb-2 btn-sm" >{btntxt}</button>
+                </h1>
 
             </div>
-            
-            <div className="accordion"  id="accordionExample">
+
+            <div className="accordion" id="accordionExample">
                 <div className="accordion-item" style={myStyle}>
                     <h2 className="accordion-header">
                         <button className="accordion-button" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
